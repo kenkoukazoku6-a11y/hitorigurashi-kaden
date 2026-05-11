@@ -54,11 +54,11 @@ async function generateArticle() {
   });
 
   let content = message.content[0].text;
-  // Markdownコードブロックを除去
-  const fenceMatch = content.match(/```(?:html)?\n?([\s\S]*?)```/);
-  if (fenceMatch) {
-    content = fenceMatch[1].trim();
-  }
+  // 先頭のコードフェンスを除去
+  content = content.replace(/^```(?:html)?\s*\n?/, '');
+  // 末尾のコードフェンスを除去
+  content = content.replace(/\n?```\s*$/, '');
+  content = content.trim();
   const articlesDir = path.join(process.cwd(), 'articles');
   if (!fs.existsSync(articlesDir)) fs.mkdirSync(articlesDir);
   fs.writeFileSync(path.join(articlesDir, filename), content);
