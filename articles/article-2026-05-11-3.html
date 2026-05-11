@@ -5,248 +5,404 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>電気ケトルとポットどちらがいい？一人暮らし向け徹底比較【2026年最新】おすすめ5選</title>
   <meta name="description" content="電気ケトルと電気ポット、一人暮らしにはどちらが向いている？沸騰速度・保温機能・電気代・価格などを徹底比較。おすすめ商品も5選紹介します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #1560a8;
+      --primary-dark: #0d4a8a;
+      --accent: #ff6b35;
+      --bg: #f4f6f9;
+      --white: #ffffff;
+      --text: #2d2d2d;
+      --text-light: #6b7280;
+      --border: #e5e7eb;
+      --shadow: 0 2px 12px rgba(0,0,0,0.08);
+      --radius: 12px;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Hiragino Sans', 'Meiryo', sans-serif; background: #f9f9f9; color: #333; line-height: 1.8; }
-    header { background: #2c7a4b; color: white; padding: 20px; text-align: center; }
-    header h1 { font-size: 1.4rem; }
-    header p { font-size: 0.9rem; margin-top: 6px; opacity: 0.9; }
-    nav { background: #235f3a; padding: 10px; text-align: center; }
-    nav a { color: white; text-decoration: none; font-size: 0.9rem; margin: 0 10px; }
-    .container { max-width: 860px; margin: 0 auto; padding: 30px 20px; }
-    h1.article-title { font-size: 1.7rem; color: #2c7a4b; margin-bottom: 20px; line-height: 1.4; }
-    h2 { font-size: 1.25rem; color: #2c7a4b; border-left: 5px solid #2c7a4b; padding-left: 12px; margin: 36px 0 14px; }
-    h3 { font-size: 1.05rem; color: #1a5c37; margin: 24px 0 10px; border-bottom: 2px solid #c8e6c9; padding-bottom: 6px; }
-    p { margin-bottom: 14px; }
-    .intro-box { background: #e8f5e9; border-left: 4px solid #2c7a4b; padding: 18px 20px; border-radius: 6px; margin-bottom: 28px; }
-    .compare-box { display: flex; gap: 20px; margin-bottom: 28px; flex-wrap: wrap; }
-    .compare-card { flex: 1; min-width: 240px; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px; }
-    .compare-card h3 { border-bottom: 2px solid #a5d6a7; color: #2c7a4b; margin-top: 0; }
-    .compare-card ul { padding-left: 18px; font-size: 0.92rem; }
-    .compare-card li { margin-bottom: 6px; }
-    .product-card { background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 24px; margin-bottom: 28px; }
-    .product-card h3 { border-bottom: 2px solid #a5d6a7; color: #2c7a4b; }
-    .product-meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
-    .tag { background: #e8f5e9; color: #2c7a4b; padding: 4px 10px; border-radius: 20px; font-size: 0.82rem; font-weight: bold; }
-    .amazon-btn { display: inline-block; background: #ff9900; color: white; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1rem; margin-top: 14px; transition: background 0.2s; }
-    .amazon-btn:hover { background: #e68a00; }
-    table { width: 100%; border-collapse: collapse; margin: 20px 0 30px; font-size: 0.9rem; }
-    th { background: #2c7a4b; color: white; padding: 10px 12px; text-align: left; }
-    td { padding: 10px 12px; border-bottom: 1px solid #ddd; background: white; }
-    tr:nth-child(even) td { background: #f5faf6; }
-    .point-box { background: white; border: 1px solid #c8e6c9; border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
-    .point-box h3 { border-bottom: none; margin-top: 0; }
-    .summary-box { background: #e8f5e9; border-radius: 10px; padding: 22px 24px; margin-top: 30px; }
-    footer { background: #2c7a4b; color: white; text-align: center; padding: 20px; font-size: 0.85rem; margin-top: 40px; }
-    footer a { color: #c8e6c9; }
-    .back-link { display: inline-block; margin-bottom: 20px; color: #2c7a4b; text-decoration: none; font-size: 0.9rem; }
-    .back-link:hover { text-decoration: underline; }
-    @media (max-width: 600px) {
-      h1.article-title { font-size: 1.3rem; }
-      table { font-size: 0.78rem; }
-      .amazon-btn { width: 100%; text-align: center; }
-      .compare-box { flex-direction: column; }
+    body { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Meiryo', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+    header { background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; height: 64px; gap: 16px; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 36px; height: 36px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+    .logo-text { font-size: 1rem; font-weight: 700; color: var(--text); line-height: 1.2; }
+    .logo-text span { display: block; font-size: 0.68rem; font-weight: 400; color: var(--text-light); }
+    .back-btn { margin-left: auto; display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 6px; text-decoration: none; font-size: 0.82rem; color: var(--text-light); transition: background 0.15s; }
+    .back-btn:hover { background: var(--bg); }
+
+    .article-hero { background: linear-gradient(135deg, #1560a8, #0d4a8a); color: white; padding: 48px 20px; }
+    .article-hero-inner { max-width: 860px; margin: 0 auto; }
+    .breadcrumb { display: flex; gap: 6px; align-items: center; font-size: 0.78rem; opacity: 0.75; margin-bottom: 16px; }
+    .breadcrumb a { color: white; text-decoration: none; }
+    .breadcrumb span { opacity: 0.6; }
+    .article-tag-row { display: flex; gap: 8px; margin-bottom: 14px; }
+    .article-tag { background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); color: white; font-size: 0.75rem; font-weight: 700; padding: 3px 12px; border-radius: 20px; }
+    .article-hero h1 { font-size: 1.7rem; font-weight: 700; line-height: 1.4; margin-bottom: 14px; }
+    .article-meta { display: flex; gap: 20px; font-size: 0.8rem; opacity: 0.8; }
+
+    .article-wrap { max-width: 1100px; margin: 0 auto; padding: 36px 20px; display: grid; grid-template-columns: 1fr 280px; gap: 36px; }
+
+    .article-body { min-width: 0; }
+    .intro-box { background: var(--white); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin-bottom: 32px; box-shadow: var(--shadow); font-size: 0.95rem; line-height: 1.9; }
+    .intro-box p + p { margin-top: 12px; }
+
+    .article-body h2 { font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; padding: 12px 18px; border-radius: 8px; margin: 40px 0 18px; }
+    .article-body h3 { font-size: 1.02rem; font-weight: 700; color: var(--primary); border-bottom: 2px solid #dbeafe; padding-bottom: 8px; margin: 28px 0 12px; }
+    .article-body p { margin-bottom: 14px; font-size: 0.95rem; }
+
+    /* COMPARE CARDS */
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+    .compare-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; }
+    .compare-card-head { padding: 12px 16px; font-size: 0.95rem; font-weight: 700; }
+    .compare-card-head.blue { background: #dbeafe; color: var(--primary); }
+    .compare-card-head.orange { background: #fef3e2; color: #c2410c; }
+    .compare-card ul { list-style: none; padding: 14px 16px; }
+    .compare-card li { padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; display: flex; gap: 8px; }
+    .compare-card li:last-child { border-bottom: none; }
+    .compare-card li::before { content: '✓'; color: #22c55e; font-weight: 700; flex-shrink: 0; }
+    .compare-card li.minus::before { content: '✗'; color: #ef4444; }
+
+    .verdict-box { background: linear-gradient(135deg, #dbeafe, #eff6ff); border: 1px solid #93c5fd; border-radius: var(--radius); padding: 18px 20px; margin-bottom: 32px; font-size: 0.93rem; }
+    .verdict-box strong { color: var(--primary); }
+
+    .point-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px 22px; margin-bottom: 16px; border: 1px solid var(--border); }
+    .point-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .point-num { width: 28px; height: 28px; background: var(--primary); color: white; border-radius: 50%; font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .point-card h3 { border: none; margin: 0; padding: 0; font-size: 1rem; color: var(--text); }
+    .point-card p { margin: 0; font-size: 0.9rem; color: #444; }
+
+    .product-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; margin-bottom: 24px; }
+    .product-card-head { background: linear-gradient(90deg, #f0f7ff, #e8f0fe); padding: 14px 20px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--border); }
+    .product-rank { width: 32px; height: 32px; border-radius: 8px; background: var(--primary); color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .product-rank.gold { background: #f59e0b; }
+    .product-rank.silver { background: #9ca3af; }
+    .product-rank.bronze { background: #b45309; }
+    .product-card-head h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin: 0; border: none; padding: 0; }
+    .product-card-body { padding: 18px 20px; }
+    .product-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .ptag { background: #e8f0fe; color: var(--primary); font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .product-card-body p { font-size: 0.92rem; margin-bottom: 10px; }
+    .product-info-row { display: flex; gap: 20px; background: #f8fafc; border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.85rem; }
+    .product-info-row span strong { display: block; font-size: 0.72rem; color: var(--text-light); margin-bottom: 2px; }
+    .amazon-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: white; padding: 13px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.95rem; margin-top: 6px; transition: background 0.2s, transform 0.15s; box-shadow: 0 3px 12px rgba(255,107,53,0.35); }
+    .amazon-btn:hover { background: #e05a28; transform: translateY(-1px); }
+
+    .table-wrap { overflow-x: auto; margin: 20px 0 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    thead th { background: var(--primary); color: white; padding: 12px 14px; text-align: left; white-space: nowrap; }
+    tbody td { padding: 11px 14px; border-bottom: 1px solid var(--border); background: var(--white); }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:nth-child(even) td { background: #f8fafc; }
+    tbody tr:hover td { background: #f0f7ff; }
+
+    .summary-box { background: linear-gradient(135deg, #f0f7ff, #e8f0fe); border: 1px solid #bfdbfe; border-radius: var(--radius); padding: 24px; margin-top: 32px; }
+    .summary-box h2 { background: none; color: var(--primary); padding: 0; border-radius: 0; font-size: 1.1rem; margin: 0 0 14px; }
+    .summary-box p { font-size: 0.93rem; margin-bottom: 12px; }
+    .summary-box p:last-child { margin-bottom: 0; }
+
+    .article-sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-box { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; }
+    .sidebar-box-head { background: var(--primary); color: white; padding: 11px 16px; font-size: 0.85rem; font-weight: 700; }
+    .sidebar-box-body { padding: 14px 16px; }
+    .toc-list { list-style: none; }
+    .toc-list li { border-bottom: 1px solid var(--border); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 9px 4px; font-size: 0.82rem; color: var(--text); text-decoration: none; transition: color 0.15s; }
+    .toc-list a:hover { color: var(--primary); }
+    .toc-list .toc-h3 { padding-left: 14px; font-size: 0.78rem; color: var(--text-light); }
+
+    footer { background: #1a2744; color: #9ca3af; margin-top: 20px; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; padding: 20px; text-align: center; font-size: 0.75rem; }
+    .footer-bottom a { color: #6b7280; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .article-wrap { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+      .article-hero h1 { font-size: 1.3rem; }
+      .compare-grid { grid-template-columns: 1fr; }
+      .product-info-row { flex-direction: column; gap: 8px; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>一人暮らしの小型家電ガイド</h1>
-  <p>狭い部屋でも使える！コンパクト家電を徹底比較</p>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-icon">🏠</div>
+      <div class="logo-text">一人暮らし家電ガイド<span>コンパクト家電を徹底比較</span></div>
+    </a>
+    <a href="../index.html" class="back-btn">← トップへ戻る</a>
+  </div>
 </header>
-<nav>
-  <a href="../index.html">トップ</a>
-  <a href="#">冷蔵庫</a>
-  <a href="#">電子レンジ</a>
-  <a href="#">調理家電</a>
-</nav>
 
-<div class="container">
-  <a href="../index.html" class="back-link">← トップへ戻る</a>
-
-  <h1 class="article-title">電気ケトルとポットどちらがいい？一人暮らし向け徹底比較【2026年最新】おすすめ5選</h1>
-
-  <div class="intro-box">
-    <p>一人暮らしを始めるにあたって、「お湯を沸かす家電」は毎日使う必需品のひとつです。コーヒー・カップ麺・インスタントスープ・お茶など、お湯を使う場面は意外と多く、適切な製品を選ぶことで日々の生活がぐっと快適になります。</p>
-    <p>お湯を沸かす家電には大きく「電気ケトル」と「電気ポット（保温ポット）」の2種類があります。電気ケトルは必要なときに素早くお湯を沸かせるのが特徴で、電気ポットは大量のお湯をいつでも保温しておけるのが特徴です。どちらが一人暮らしに向いているか、それぞれのメリット・デメリットを詳しく比較していきます。</p>
-    <p>この記事では、電気ケトルと電気ポットの違いを分かりやすく解説したうえで、一人暮らしにおすすめの電気ケトルを5つご紹介します。価格・容量・機能・デザインなど、幅広い観点から比較していますので、ぜひ購入の参考にしてください。</p>
-  </div>
-
-  <h2>電気ケトル vs 電気ポット｜違いを比較</h2>
-
-  <div class="compare-box">
-    <div class="compare-card">
-      <h3>⚡ 電気ケトル</h3>
-      <ul>
-        <li>素早く沸騰（1〜3分）</li>
-        <li>必要な分だけ沸かせる</li>
-        <li>電気代が安い（使った分だけ）</li>
-        <li>コンパクトで場所を取らない</li>
-        <li>価格が安め（2,000〜10,000円）</li>
-        <li>保温機能なし（一部あり）</li>
-      </ul>
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="../index.html">トップ</a>
+      <span>›</span>
+      <a href="#">電気ケトル</a>
+      <span>›</span>
+      <span>電気ケトルvsポット徹底比較</span>
     </div>
-    <div class="compare-card">
-      <h3>🫖 電気ポット</h3>
-      <ul>
-        <li>大量のお湯をいつでも使える</li>
-        <li>保温機能で常に温かいお湯</li>
-        <li>沸騰に時間がかかる</li>
-        <li>サイズが大きめ</li>
-        <li>価格高め（5,000〜20,000円）</li>
-        <li>保温中も電力を消費する</li>
-      </ul>
+    <div class="article-tag-row">
+      <span class="article-tag">電気ケトル</span>
+      <span class="article-tag">2026年最新</span>
+      <span class="article-tag">おすすめ5選</span>
+    </div>
+    <h1>電気ケトルとポットどちらがいい？<br>一人暮らし向け徹底比較【2026年最新】おすすめ5選</h1>
+    <div class="article-meta">
+      <span>📅 2026年5月11日</span>
+      <span>📖 読了目安：8分</span>
     </div>
   </div>
+</div>
 
-  <p>結論として、<strong>一人暮らしには電気ケトルがおすすめ</strong>です。一人分のお湯は少量で済むことが多く、電気ポットほどの大容量は必要ありません。また、電気ポットは保温のために常に電気を消費するため、一人暮らしの節約志向にはあまり向いていません。電気ケトルなら必要なときだけ使うため、電気代を最小限に抑えられます。</p>
+<div class="article-wrap">
+  <article class="article-body">
 
-  <h2>電気ケトルの選び方｜4つのポイント</h2>
-
-  <div class="point-box">
-    <h3>① 容量で選ぶ（一人暮らしは0.8〜1.2Lが目安）</h3>
-    <p>一人暮らしに最適な電気ケトルの容量は0.8L〜1.2Lです。コーヒー1杯で約150〜200ml、カップ麺1個で約300〜400mlを使用します。0.8Lあれば日常使いに十分ですが、来客時やまとめてお湯を沸かしたい場合は1.2L以上あると便利です。容量が大きすぎると本体も重くなりますし、沸騰に時間がかかります。逆に小さすぎると何度も沸かし直す手間が生じます。自分の使用シーンを想像して適切な容量を選びましょう。</p>
-  </div>
-
-  <div class="point-box">
-    <h3>② 沸騰時間・保温機能を確認する</h3>
-    <p>電気ケトルの大きな魅力は「素早くお湯が沸く」ことです。一般的な電気ケトルは1Lのお湯を約2〜3分で沸騰させます。朝の忙しい時間帯や、すぐにお湯が必要なときに非常に便利です。また、最近は保温機能付きのモデルも増えており、設定温度をキープできるタイプは特にコーヒーや緑茶など、温度にこだわる飲み物を飲む方に人気です。60〜100℃の間で温度設定ができるモデルは、用途に応じてお湯の温度を調整できて重宝します。</p>
-  </div>
-
-  <div class="point-box">
-    <h3>③ 安全機能をチェックする</h3>
-    <p>電気ケトルを選ぶうえで安全機能は非常に重要です。特に確認したいのは「空焚き防止機能」「自動電源オフ機能」「蒸気レス設計」の3点です。空焚き防止は水がない状態で加熱することを防ぎ、本体の破損や火災リスクを低減します。自動電源オフはお湯が沸いたら自動でスイッチが切れる機能で、消し忘れを防ぎます。蒸気レス設計は蒸気が少ないため、棚の下など狭い場所に設置しても安心です。小さな子供がいる家庭や安全を重視する方は、これらの機能が揃っているモデルを選びましょう。</p>
-  </div>
-
-  <div class="point-box">
-    <h3>④ 注ぎ口の形状・デザインを確認する</h3>
-    <p>電気ケトルは毎日使う道具なので、使いやすさとデザインも重要です。注ぎ口の形状は、コーヒーのドリップをする方には「細口タイプ」が向いており、一点に細くお湯を注げるためハンドドリップの精度が上がります。一般的な用途には「広口タイプ」で十分です。デザインはステンレス製のスタイリッシュなものから、温かみのあるマットカラーのものまで幅広くあります。キッチンや部屋のインテリアに合わせて選ぶと、毎日の使用がより楽しくなります。</p>
-  </div>
-
-  <h2>おすすめ電気ケトル5選</h2>
-
-  <div class="product-card">
-    <h3>① ティファール 電気ケトル アプレシア 0.8L</h3>
-    <div class="product-meta">
-      <span class="tag">容量: 0.8L</span>
-      <span class="tag">軽量設計</span>
-      <span class="tag">安全機能充実</span>
+    <div class="intro-box">
+      <p>一人暮らしを始めるにあたって、「お湯を沸かす家電」は毎日使う必需品のひとつです。コーヒー・カップ麺・インスタントスープ・お茶など、お湯を使う場面は意外と多く、適切な製品を選ぶことで日々の生活がぐっと快適になります。</p>
+      <p>お湯を沸かす家電には大きく「電気ケトル」と「電気ポット（保温ポット）」の2種類があります。どちらが一人暮らしに向いているか、それぞれのメリット・デメリットをわかりやすく比較したうえで、おすすめの電気ケトルを5つご紹介します。</p>
     </div>
-    <p>ティファールのアプレシアシリーズは、電気ケトルの定番中の定番です。0.8Lのコンパクトサイズで一人暮らしにぴったり。本体重量は約840gと軽量で、女性でも片手で楽に扱えます。沸騰時間は約2〜3分と速く、忙しい朝でもすぐにお湯が使えます。沸騰後の自動電源オフ機能で消し忘れを防止。360度回転台付きで右手・左手どちらでも使いやすい設計です。カラーバリエーションが豊富で、部屋のインテリアに合わせて選べるのも嬉しいポイントです。</p>
-    <p><strong>こんな人におすすめ：</strong>毎日コーヒーやお茶を飲む方・使いやすさ重視の方</p>
-    <p><strong>価格帯：</strong>3,000〜5,000円</p>
-    <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn">Amazonで見る</a>
-  </div>
 
-  <div class="product-card">
-    <h3>② デロンギ 電気ケトル アイコナ KBLA1200J 1.2L</h3>
-    <div class="product-meta">
-      <span class="tag">容量: 1.2L</span>
-      <span class="tag">デザイン重視</span>
-      <span class="tag">保温機能</span>
+    <h2>電気ケトル vs 電気ポット｜違いを比較</h2>
+
+    <div class="compare-grid">
+      <div class="compare-card">
+        <div class="compare-card-head blue">⚡ 電気ケトル</div>
+        <ul>
+          <li>素早く沸騰（1〜3分）</li>
+          <li>必要な分だけ沸かせる</li>
+          <li>電気代が安い</li>
+          <li>コンパクトで場所を取らない</li>
+          <li>価格が安め（2,000〜18,000円）</li>
+          <li class="minus">保温機能なし（一部あり）</li>
+        </ul>
+      </div>
+      <div class="compare-card">
+        <div class="compare-card-head orange">🫖 電気ポット</div>
+        <ul>
+          <li>大量のお湯をいつでも使える</li>
+          <li>保温機能で常に温かいお湯</li>
+          <li class="minus">沸騰に時間がかかる</li>
+          <li class="minus">サイズが大きめ</li>
+          <li class="minus">価格高め（5,000〜20,000円）</li>
+          <li class="minus">保温中も電力を消費する</li>
+        </ul>
+      </div>
     </div>
-    <p>デロンギのアイコナシリーズは、イタリアンデザインのおしゃれな外観が人気の電気ケトルです。1.2Lの容量で、来客時にも対応できます。温度設定機能付きで60〜100℃の範囲で1℃単位の調整が可能。緑茶は80℃、コーヒーは90〜95℃など、飲み物に最適な温度でお湯を用意できます。保温機能も搭載しており、設定温度を最大20分間キープ。ステンレス製の美しいボディは清潔感があり、キッチンに置くだけでインテリアとして映えます。デザインにこだわりたい方に特におすすめです。</p>
-    <p><strong>こんな人におすすめ：</strong>デザイン・温度調整にこだわる方・コーヒー愛好家</p>
-    <p><strong>価格帯：</strong>10,000〜15,000円</p>
-    <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn">Amazonで見る</a>
-  </div>
 
-  <div class="product-card">
-    <h3>③ アイリスオーヤマ 電気ケトル IKE-C1000 1.0L</h3>
-    <div class="product-meta">
-      <span class="tag">容量: 1.0L</span>
-      <span class="tag">低価格</span>
-      <span class="tag">シンプル操作</span>
+    <div class="verdict-box">
+      <strong>結論：一人暮らしには電気ケトルがおすすめ！</strong><br>
+      一人分のお湯は少量で済むことが多く、電気ポットほどの大容量は不要です。電気ポットは保温のために常に電気を消費するため、節約志向の一人暮らしにはあまり向いていません。電気ケトルなら必要なときだけ使うので、電気代を最小限に抑えられます。
     </div>
-    <p>アイリスオーヤマの電気ケトルは、シンプルな機能と低価格が魅力のコスパ優秀モデルです。1.0Lの容量で一人暮らしの日常使いにちょうど良いサイズ。操作はスイッチを押すだけのシンプル設計で、誰でも簡単に使えます。沸騰後の自動電源オフ・空焚き防止機能付きで安全面も安心です。軽量で持ちやすく、注ぎ口も使いやすい形状です。価格が非常に手ごろなため、「とりあえず電気ケトルを試してみたい」という方の最初の一台としても最適です。</p>
-    <p><strong>こんな人におすすめ：</strong>予算重視・シンプルな機能で十分な方</p>
-    <p><strong>価格帯：</strong>2,000〜3,000円</p>
-    <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn">Amazonで見る</a>
-  </div>
 
-  <div class="product-card">
-    <h3>④ バルミューダ 電気ケトル The Pot K02A 0.6L</h3>
-    <div class="product-meta">
-      <span class="tag">容量: 0.6L</span>
-      <span class="tag">細口・ドリップ向き</span>
-      <span class="tag">スタイリッシュ</span>
+    <h2>電気ケトルの選び方｜4つのポイント</h2>
+
+    <div class="point-card">
+      <div class="point-card-head">
+        <div class="point-num">1</div>
+        <h3>容量で選ぶ（一人暮らしは0.8〜1.2Lが目安）</h3>
+      </div>
+      <p>一人暮らしに最適な電気ケトルの容量は0.8L〜1.2Lです。コーヒー1杯で約150〜200ml、カップ麺1個で約300〜400mlを使用します。0.8Lあれば日常使いに十分ですが、来客時やまとめてお湯を沸かしたい場合は1.2L以上あると便利です。容量が大きすぎると本体が重くなり、沸騰にも時間がかかります。自分の使用シーンを想像して適切な容量を選びましょう。</p>
     </div>
-    <p>バルミューダのThe Potは、ハンドドリップコーヒーを愛する方に特におすすめの電気ケトルです。細く絞られた注ぎ口でお湯の量を細かくコントロールでき、ドリップコーヒーの仕上がりが格段に向上します。容量0.6Lと小さめですが、一人分のコーヒーや紅茶には十分です。重量は約820gと軽く、片手で楽に扱えます。シンプルでスタイリッシュなデザインはキッチンに置くだけでサマになり、インテリアへのこだわりが高い方に特に人気のモデルです。</p>
-    <p><strong>こんな人におすすめ：</strong>ドリップコーヒー愛好家・インテリアにこだわる方</p>
-    <p><strong>価格帯：</strong>15,000〜18,000円</p>
-    <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn">Amazonで見る</a>
-  </div>
 
-  <div class="product-card">
-    <h3>⑤ パナソニック 電気ケトル NC-BK1 1.0L</h3>
-    <div class="product-meta">
-      <span class="tag">容量: 1.0L</span>
-      <span class="tag">温度設定5段階</span>
-      <span class="tag">国内メーカー</span>
+    <div class="point-card">
+      <div class="point-card-head">
+        <div class="point-num">2</div>
+        <h3>沸騰時間・保温機能を確認する</h3>
+      </div>
+      <p>一般的な電気ケトルは1Lのお湯を約2〜3分で沸騰させます。最近は保温機能付きのモデルも増えており、設定温度をキープできるタイプはコーヒーや緑茶など温度にこだわる飲み物を飲む方に人気です。60〜100℃の間で温度設定ができるモデルは、用途に応じてお湯の温度を調整できて重宝します。</p>
     </div>
-    <p>パナソニックの電気ケトルNC-BK1は、5段階の温度設定（60・70・80・90・100℃）と保温機能を搭載した高機能モデルです。飲み物の種類に応じて最適な温度でお湯を用意でき、緑茶・紅茶・コーヒー・白湯など幅広い用途に対応します。保温機能は沸騰後30分間温度をキープ。安全面では蒸気レス設計・転倒流水防止・空焚き防止と三拍子揃っています。国内大手メーカーの品質で長く安心して使えるモデルを求める方におすすめの一台です。</p>
-    <p><strong>こんな人におすすめ：</strong>温度設定・安全機能を重視する方・長く使いたい方</p>
-    <p><strong>価格帯：</strong>8,000〜12,000円</p>
-    <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn">Amazonで見る</a>
-  </div>
 
-  <h2>おすすめ電気ケトル 比較表</h2>
+    <div class="point-card">
+      <div class="point-card-head">
+        <div class="point-num">3</div>
+        <h3>安全機能をチェックする</h3>
+      </div>
+      <p>特に確認したいのは「空焚き防止機能」「自動電源オフ機能」「蒸気レス設計」の3点です。空焚き防止は本体の破損や火災リスクを低減します。自動電源オフはお湯が沸いたら自動でスイッチが切れる機能で消し忘れを防ぎます。蒸気レス設計は蒸気が少ないため棚の下など狭い場所に設置しても安心です。</p>
+    </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>商品名</th>
-        <th>容量</th>
-        <th>価格帯</th>
-        <th>特徴</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>ティファール アプレシア</td>
-        <td>0.8L</td>
-        <td>3,000〜5,000円</td>
-        <td>定番・軽量・豊富なカラー</td>
-      </tr>
-      <tr>
-        <td>デロンギ アイコナ</td>
-        <td>1.2L</td>
-        <td>10,000〜15,000円</td>
-        <td>温度設定・保温・おしゃれ</td>
-      </tr>
-      <tr>
-        <td>アイリスオーヤマ IKE-C1000</td>
-        <td>1.0L</td>
-        <td>2,000〜3,000円</td>
-        <td>低価格・シンプル・安全機能</td>
-      </tr>
-      <tr>
-        <td>バルミューダ The Pot</td>
-        <td>0.6L</td>
-        <td>15,000〜18,000円</td>
-        <td>細口・ドリップ向き・スタイリッシュ</td>
-      </tr>
-      <tr>
-        <td>パナソニック NC-BK1</td>
-        <td>1.0L</td>
-        <td>8,000〜12,000円</td>
-        <td>5段階温度・蒸気レス・高安全</td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="point-card">
+      <div class="point-card-head">
+        <div class="point-num">4</div>
+        <h3>注ぎ口の形状・デザインを確認する</h3>
+      </div>
+      <p>コーヒーのドリップをする方には「細口タイプ」が向いており、一点に細くお湯を注げるためハンドドリップの精度が上がります。一般的な用途には「広口タイプ」で十分です。デザインはステンレス製のスタイリッシュなものから温かみのあるマットカラーのものまで幅広くあります。キッチンのインテリアに合わせて選ぶと使用がより楽しくなります。</p>
+    </div>
 
-  <h2>まとめ</h2>
-  <div class="summary-box">
-    <p>一人暮らしには、電気ポットより電気ケトルの方が向いています。必要な分だけお湯を沸かせて電気代が安く、コンパクトで場所を取らないため、狭い部屋でも活躍します。予算重視ならアイリスオーヤマやティファール、デザインや機能にこだわるならデロンギ・バルミューダ・パナソニックがおすすめです。</p>
-    <p>コーヒーをよく飲む方は温度設定機能付きのモデルを、シンプルにお湯を沸かすだけなら基本機能モデルを選ぶのがベストです。毎日使うものだからこそ、自分のライフスタイルや好みに合った一台を選んで、快適な一人暮らしを楽しんでください！</p>
-  </div>
+    <h2>おすすめ電気ケトル5選</h2>
 
+    <div class="product-card">
+      <div class="product-card-head">
+        <div class="product-rank gold">1位</div>
+        <h3>ティファール 電気ケトル アプレシア 0.8L</h3>
+      </div>
+      <div class="product-card-body">
+        <div class="product-tags">
+          <span class="ptag">容量: 0.8L</span>
+          <span class="ptag">軽量設計</span>
+          <span class="ptag">360度回転台</span>
+          <span class="ptag">自動オフ</span>
+        </div>
+        <p>ティファールのアプレシアシリーズは電気ケトルの定番中の定番です。0.8Lのコンパクトサイズで一人暮らしにぴったり。本体重量は約840gと軽量で女性でも片手で楽に扱えます。沸騰時間は約2〜3分と速く、忙しい朝でもすぐにお湯が使えます。360度回転台付きで右手・左手どちらでも使いやすく、カラーバリエーションが豊富なのも魅力です。</p>
+        <div class="product-info-row">
+          <span><strong>こんな人に</strong>毎日コーヒーやお茶を飲む方</span>
+          <span><strong>価格帯</strong>3,000〜5,000円</span>
+        </div>
+        <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-head">
+        <div class="product-rank silver">2位</div>
+        <h3>デロンギ 電気ケトル アイコナ KBLA1200J 1.2L</h3>
+      </div>
+      <div class="product-card-body">
+        <div class="product-tags">
+          <span class="ptag">容量: 1.2L</span>
+          <span class="ptag">温度設定機能</span>
+          <span class="ptag">保温20分</span>
+          <span class="ptag">イタリアンデザイン</span>
+        </div>
+        <p>デロンギのアイコナシリーズは、イタリアンデザインのおしゃれな外観が人気の電気ケトルです。60〜100℃の範囲で1℃単位の温度調整が可能。緑茶は80℃、コーヒーは90〜95℃など飲み物に最適な温度でお湯を用意できます。保温機能は沸騰後20分間温度をキープ。ステンレス製の美しいボディはキッチンに置くだけでインテリアとして映えます。</p>
+        <div class="product-info-row">
+          <span><strong>こんな人に</strong>デザイン・温度調整にこだわる方</span>
+          <span><strong>価格帯</strong>10,000〜15,000円</span>
+        </div>
+        <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-head">
+        <div class="product-rank bronze">3位</div>
+        <h3>アイリスオーヤマ 電気ケトル IKE-C1000 1.0L</h3>
+      </div>
+      <div class="product-card-body">
+        <div class="product-tags">
+          <span class="ptag">容量: 1.0L</span>
+          <span class="ptag">低価格</span>
+          <span class="ptag">シンプル操作</span>
+          <span class="ptag">安全機能</span>
+        </div>
+        <p>アイリスオーヤマの電気ケトルは、シンプルな機能と低価格が魅力のコスパ優秀モデルです。1.0Lの容量で一人暮らしの日常使いにちょうど良いサイズ。スイッチを押すだけのシンプル設計で誰でも簡単に使えます。沸騰後の自動電源オフ・空焚き防止機能付きで安全面も安心。価格が非常に手ごろなため、初めての一台としても最適です。</p>
+        <div class="product-info-row">
+          <span><strong>こんな人に</strong>予算重視・シンプルで十分な方</span>
+          <span><strong>価格帯</strong>2,000〜3,000円</span>
+        </div>
+        <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-head">
+        <div class="product-rank">4位</div>
+        <h3>バルミューダ 電気ケトル The Pot K02A 0.6L</h3>
+      </div>
+      <div class="product-card-body">
+        <div class="product-tags">
+          <span class="ptag">容量: 0.6L</span>
+          <span class="ptag">細口ノズル</span>
+          <span class="ptag">ドリップ向き</span>
+          <span class="ptag">スタイリッシュ</span>
+        </div>
+        <p>バルミューダのThe Potは、ハンドドリップコーヒーを愛する方に特におすすめの電気ケトルです。細く絞られた注ぎ口でお湯の量を細かくコントロールでき、ドリップコーヒーの仕上がりが格段に向上します。容量0.6Lと小さめですが、一人分のコーヒーや紅茶には十分です。シンプルでスタイリッシュなデザインはキッチンをおしゃれに演出します。</p>
+        <div class="product-info-row">
+          <span><strong>こんな人に</strong>ドリップコーヒー愛好家・デザイン重視の方</span>
+          <span><strong>価格帯</strong>15,000〜18,000円</span>
+        </div>
+        <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-head">
+        <div class="product-rank">5位</div>
+        <h3>パナソニック 電気ケトル NC-BK1 1.0L</h3>
+      </div>
+      <div class="product-card-body">
+        <div class="product-tags">
+          <span class="ptag">容量: 1.0L</span>
+          <span class="ptag">5段階温度設定</span>
+          <span class="ptag">蒸気レス</span>
+          <span class="ptag">国内メーカー</span>
+        </div>
+        <p>パナソニックの電気ケトルNC-BK1は、5段階の温度設定（60・70・80・90・100℃）と保温機能を搭載した高機能モデルです。緑茶・紅茶・コーヒー・白湯など幅広い用途に対応。蒸気レス設計・転倒流水防止・空焚き防止と安全機能も三拍子揃っています。国内大手メーカーの品質で長く安心して使えます。</p>
+        <div class="product-info-row">
+          <span><strong>こんな人に</strong>温度設定・安全機能を重視する方</span>
+          <span><strong>価格帯</strong>8,000〜12,000円</span>
+        </div>
+        <a href="https://www.amazon.co.jp/s?k=電気ケトル+一人暮らし" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
+      </div>
+    </div>
+
+    <h2>おすすめ電気ケトル 比較表</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>商品名</th>
+            <th>容量</th>
+            <th>価格帯</th>
+            <th>特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>ティファール アプレシア</td><td>0.8L</td><td>3,000〜5,000円</td><td>定番・軽量・豊富なカラー</td></tr>
+          <tr><td>デロンギ アイコナ</td><td>1.2L</td><td>10,000〜15,000円</td><td>温度設定・保温・おしゃれ</td></tr>
+          <tr><td>アイリスオーヤマ IKE-C1000</td><td>1.0L</td><td>2,000〜3,000円</td><td>低価格・シンプル・安全機能</td></tr>
+          <tr><td>バルミューダ The Pot</td><td>0.6L</td><td>15,000〜18,000円</td><td>細口・ドリップ向き・スタイリッシュ</td></tr>
+          <tr><td>パナソニック NC-BK1</td><td>1.0L</td><td>8,000〜12,000円</td><td>5段階温度・蒸気レス・高安全</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="summary-box">
+      <h2>まとめ</h2>
+      <p>一人暮らしには、電気ポットより電気ケトルの方が向いています。必要な分だけお湯を沸かせて電気代が安く、コンパクトで場所を取らないため狭い部屋でも活躍します。予算重視ならアイリスオーヤマやティファール、デザインや機能にこだわるならデロンギ・バルミューダ・パナソニックがおすすめです。</p>
+      <p>コーヒーをよく飲む方は温度設定機能付きのモデルを、シンプルにお湯を沸かすだけなら基本機能モデルを選ぶのがベストです。自分のライフスタイルに合った一台を選んで、快適な一人暮らしを楽しんでください！</p>
+    </div>
+
+  </article>
+
+  <aside class="article-sidebar">
+    <div class="sidebar-box">
+      <div class="sidebar-box-head">📋 目次</div>
+      <div class="sidebar-box-body">
+        <ul class="toc-list">
+          <li><a href="#">電気ケトルvsポット比較</a></li>
+          <li><a href="#">選び方4つのポイント</a></li>
+          <li><a href="#" class="toc-h3">① 容量で選ぶ</a></li>
+          <li><a href="#" class="toc-h3">② 沸騰時間・保温</a></li>
+          <li><a href="#" class="toc-h3">③ 安全機能</a></li>
+          <li><a href="#" class="toc-h3">④ 注ぎ口・デザイン</a></li>
+          <li><a href="#">おすすめ5選</a></li>
+          <li><a href="#">比較表</a></li>
+          <li><a href="#">まとめ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-box">
+      <div class="sidebar-box-head">🔗 関連記事</div>
+      <div class="sidebar-box-body">
+        <ul class="toc-list">
+          <li><a href="article-2026-05-11-0.html">ミニ冷蔵庫おすすめ5選</a></li>
+          <li><a href="article-2026-05-11-6.html">空気清浄機おすすめ4選</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
 </div>
 
 <footer>
-  <p>&copy; 2026 一人暮らしの小型家電ガイド | <a href="#">プライバシーポリシー</a> | <a href="#">お問い合わせ</a></p>
-  <p style="margin-top:6px; font-size:0.78rem;">本サイトはAmazonアソシエイトとして適格販売により収入を得ています。</p>
+  <div class="footer-bottom">
+    <p>&copy; 2026 一人暮らし家電ガイド &nbsp;|&nbsp; 本サイトはAmazonアソシエイトとして適格販売により収入を得ています。&nbsp;|&nbsp; <a href="#">プライバシーポリシー</a></p>
+  </div>
 </footer>
 
 </body>
