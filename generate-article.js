@@ -53,7 +53,10 @@ async function generateArticle() {
 
   let content = message.content[0].text;
   // Markdownコードブロックを除去
-  content = content.replace(/^```html\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/, '').trim();
+  const fenceMatch = content.match(/```(?:html)?\n?([\s\S]*?)```/);
+  if (fenceMatch) {
+    content = fenceMatch[1].trim();
+  }
   const articlesDir = path.join(process.cwd(), 'articles');
   if (!fs.existsSync(articlesDir)) fs.mkdirSync(articlesDir);
   fs.writeFileSync(path.join(articlesDir, filename), content);
