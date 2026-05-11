@@ -78,7 +78,11 @@
     .product-rank.silver { background: #9ca3af; }
     .product-rank.bronze { background: #b45309; }
     .product-card-head h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin: 0; border: none; padding: 0; }
-    .product-card-body { padding: 18px 20px; }
+    .product-card-inner { display: flex; gap: 0; }
+    .product-card-img { width: 200px; flex-shrink: 0; overflow: hidden; background: #f8fafc; display: flex; align-items: center; justify-content: center; border-right: 1px solid var(--border); }
+    .product-card-img img { width: 200px; height: 180px; object-fit: cover; display: block; }
+    .product-card-body { padding: 18px 20px; flex: 1; }
+    @media (max-width: 600px) { .product-card-inner { flex-direction: column; } .product-card-img { width: 100%; border-right: none; border-bottom: 1px solid var(--border); } .product-card-img img { width: 100%; height: 180px; } }
     .product-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
     .ptag { background: #e8f0fe; color: var(--primary); font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
     .product-card-body p { font-size: 0.92rem; margin-bottom: 10px; }
@@ -217,19 +221,24 @@
         <div class="product-rank gold">1位</div>
         <h3>アイリスオーヤマ 冷蔵庫 142L IRSN-15A</h3>
       </div>
-      <div class="product-card-body">
-        <div class="product-tags">
-          <span class="ptag">容量: 142L</span>
-          <span class="ptag">冷凍室あり</span>
-          <span class="ptag">省エネ設計</span>
-          <span class="ptag">静音</span>
+      <div class="product-card-inner">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=200&h=180&fit=crop" alt="ミニ冷蔵庫">
         </div>
-        <p>アイリスオーヤマの142L冷蔵庫は、一人暮らしに最適なサイズ感と豊富な収納力を両立したモデルです。冷蔵室と冷凍室の2ドア構造で、野菜・飲み物・冷凍食品をしっかり使い分けられます。年間消費電力量は約199kWhと省エネ性能も優秀で、電気代を抑えたい方にも安心。ドアポケットが広く2Lペットボトルも縦に収納できます。価格もリーズナブルで、静音設計でワンルームにも向いています。コスパ最重視の方に最もおすすめのモデルです。</p>
-        <div class="product-info-row">
-          <span><strong>こんな人に</strong>コスパ重視で自炊する方</span>
-          <span><strong>価格帯</strong>30,000円前後</span>
+        <div class="product-card-body">
+          <div class="product-tags">
+            <span class="ptag">容量: 142L</span>
+            <span class="ptag">冷凍室あり</span>
+            <span class="ptag">省エネ設計</span>
+            <span class="ptag">静音</span>
+          </div>
+          <p>アイリスオーヤマの142L冷蔵庫は、一人暮らしに最適なサイズ感と豊富な収納力を両立したモデルです。冷蔵室と冷凍室の2ドア構造で、野菜・飲み物・冷凍食品をしっかり使い分けられます。年間消費電力量は約199kWhと省エネ性能も優秀で、電気代を抑えたい方にも安心。ドアポケットが広く2Lペットボトルも縦に収納できます。コスパ最重視の方に最もおすすめのモデルです。</p>
+          <div class="product-info-row">
+            <span><strong>こんな人に</strong>コスパ重視で自炊する方</span>
+            <span><strong>価格帯</strong>30,000円前後</span>
+          </div>
+          <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
         </div>
-        <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
       </div>
     </div>
 
@@ -238,18 +247,23 @@
         <div class="product-rank silver">2位</div>
         <h3>東芝 冷蔵庫 153L GR-S15BS</h3>
       </div>
-      <div class="product-card-body">
-        <div class="product-tags">
-          <span class="ptag">容量: 153L</span>
-          <span class="ptag">ドア付け替え可</span>
-          <span class="ptag">国内メーカー</span>
+      <div class="product-card-inner">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=200&h=180&fit=crop" alt="東芝冷蔵庫">
         </div>
-        <p>東芝の153L冷蔵庫は、日本の大手メーカーならではの品質と使いやすさが魅力です。スリムな設計で狭いキッチンにもすっきり収まります。ドアの開き方を右開き・左開きに変更できる「付け替えドア」仕様で設置場所を選びません。冷蔵室の棚はガラス製で汚れが拭き取りやすく清潔を保てます。省エネ性能も高く、国内メーカーの安心感を求める方に向いた一台です。</p>
-        <div class="product-info-row">
-          <span><strong>こんな人に</strong>国内メーカー品質にこだわる方</span>
-          <span><strong>価格帯</strong>40,000円前後</span>
+        <div class="product-card-body">
+          <div class="product-tags">
+            <span class="ptag">容量: 153L</span>
+            <span class="ptag">ドア付け替え可</span>
+            <span class="ptag">国内メーカー</span>
+          </div>
+          <p>東芝の153L冷蔵庫は、日本の大手メーカーならではの品質と使いやすさが魅力です。スリムな設計で狭いキッチンにもすっきり収まります。ドアの開き方を右開き・左開きに変更できる「付け替えドア」仕様で設置場所を選びません。冷蔵室の棚はガラス製で汚れが拭き取りやすく清潔を保てます。省エネ性能も高く、国内メーカーの安心感を求める方に向いた一台です。</p>
+          <div class="product-info-row">
+            <span><strong>こんな人に</strong>国内メーカー品質にこだわる方</span>
+            <span><strong>価格帯</strong>40,000円前後</span>
+          </div>
+          <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
         </div>
-        <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
       </div>
     </div>
 
@@ -258,18 +272,23 @@
         <div class="product-rank bronze">3位</div>
         <h3>ハイセンス 冷蔵庫 120L HR-B12C</h3>
       </div>
-      <div class="product-card-body">
-        <div class="product-tags">
-          <span class="ptag">容量: 120L</span>
-          <span class="ptag">スリム設計</span>
-          <span class="ptag">低価格</span>
+      <div class="product-card-inner">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&h=180&fit=crop" alt="ハイセンス冷蔵庫">
         </div>
-        <p>ハイセンスの120L冷蔵庫は、価格と性能のバランスが優れたコスパ抜群のモデルです。幅が約48cmとスリムで、狭いキッチンの隙間にも設置しやすいのが特徴です。2ドアで冷凍室もついており、アイスや冷凍食品の保存も可能。省エネ基準達成率も高く、シンプルな外観でどんなインテリアにも合わせやすい、初めての一人暮らしに人気のモデルです。</p>
-        <div class="product-info-row">
-          <span><strong>こんな人に</strong>予算を抑えたい学生の方</span>
-          <span><strong>価格帯</strong>25,000円前後</span>
+        <div class="product-card-body">
+          <div class="product-tags">
+            <span class="ptag">容量: 120L</span>
+            <span class="ptag">スリム設計</span>
+            <span class="ptag">低価格</span>
+          </div>
+          <p>ハイセンスの120L冷蔵庫は、価格と性能のバランスが優れたコスパ抜群のモデルです。幅が約48cmとスリムで、狭いキッチンの隙間にも設置しやすいのが特徴です。2ドアで冷凍室もついており、アイスや冷凍食品の保存も可能。省エネ基準達成率も高く、シンプルな外観でどんなインテリアにも合わせやすい、初めての一人暮らしに人気のモデルです。</p>
+          <div class="product-info-row">
+            <span><strong>こんな人に</strong>予算を抑えたい学生の方</span>
+            <span><strong>価格帯</strong>25,000円前後</span>
+          </div>
+          <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
         </div>
-        <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
       </div>
     </div>
 
@@ -278,18 +297,23 @@
         <div class="product-rank">4位</div>
         <h3>シャープ 冷蔵庫 137L SJ-D14J</h3>
       </div>
-      <div class="product-card-body">
-        <div class="product-tags">
-          <span class="ptag">容量: 137L</span>
-          <span class="ptag">プラズマクラスター</span>
-          <span class="ptag">除菌・脱臭</span>
+      <div class="product-card-inner">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1565538810643-b5bdb4900700?w=200&h=180&fit=crop" alt="シャープ冷蔵庫">
         </div>
-        <p>シャープの137L冷蔵庫は、独自の「プラズマクラスター」技術を搭載し庫内の除菌・脱臭効果が高いのが特徴です。食材の鮮度を長く保ちやすく、においが気になる方に特におすすめ。棚の配置が工夫されており大きな食材も収納しやすいです。省エネ性能も優れており、高機能な冷蔵庫を求める方に最適なモデルです。</p>
-        <div class="product-info-row">
-          <span><strong>こんな人に</strong>食材の鮮度・におい対策重視の方</span>
-          <span><strong>価格帯</strong>45,000円前後</span>
+        <div class="product-card-body">
+          <div class="product-tags">
+            <span class="ptag">容量: 137L</span>
+            <span class="ptag">プラズマクラスター</span>
+            <span class="ptag">除菌・脱臭</span>
+          </div>
+          <p>シャープの137L冷蔵庫は、独自の「プラズマクラスター」技術を搭載し庫内の除菌・脱臭効果が高いのが特徴です。食材の鮮度を長く保ちやすく、においが気になる方に特におすすめ。棚の配置が工夫されており大きな食材も収納しやすいです。省エネ性能も優れており、高機能な冷蔵庫を求める方に最適なモデルです。</p>
+          <div class="product-info-row">
+            <span><strong>こんな人に</strong>食材の鮮度・におい対策重視の方</span>
+            <span><strong>価格帯</strong>45,000円前後</span>
+          </div>
+          <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
         </div>
-        <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
       </div>
     </div>
 
@@ -298,19 +322,24 @@
         <div class="product-rank">5位</div>
         <h3>パナソニック 冷蔵庫 138L NR-B14DW</h3>
       </div>
-      <div class="product-card-body">
-        <div class="product-tags">
-          <span class="ptag">容量: 138L</span>
-          <span class="ptag">ナノイー搭載</span>
-          <span class="ptag">超静音</span>
-          <span class="ptag">高品質</span>
+      <div class="product-card-inner">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=200&h=180&fit=crop" alt="パナソニック冷蔵庫">
         </div>
-        <p>パナソニックの138L冷蔵庫は、独自の「ナノイー」技術で食材の鮮度保持・脱臭効果に優れています。棚はガラス製で清潔感があり、取り外して丸洗いも可能。静音設計で運転音が非常に静かなため寝室に置いても睡眠を妨げません。省エネ性能も業界トップクラス。価格は高めですが長く使える高品質な一台を求める方に強くおすすめします。</p>
-        <div class="product-info-row">
-          <span><strong>こんな人に</strong>品質・静音性・長期使用を重視する方</span>
-          <span><strong>価格帯</strong>55,000円前後</span>
+        <div class="product-card-body">
+          <div class="product-tags">
+            <span class="ptag">容量: 138L</span>
+            <span class="ptag">ナノイー搭載</span>
+            <span class="ptag">超静音</span>
+            <span class="ptag">高品質</span>
+          </div>
+          <p>パナソニックの138L冷蔵庫は、独自の「ナノイー」技術で食材の鮮度保持・脱臭効果に優れています。棚はガラス製で清潔感があり、取り外して丸洗いも可能。静音設計で運転音が非常に静かなため寝室に置いても睡眠を妨げません。省エネ性能も業界トップクラス。価格は高めですが長く使える高品質な一台を求める方に強くおすすめします。</p>
+          <div class="product-info-row">
+            <span><strong>こんな人に</strong>品質・静音性・長期使用を重視する方</span>
+            <span><strong>価格帯</strong>55,000円前後</span>
+          </div>
+          <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
         </div>
-        <a href="https://www.amazon.co.jp/s?k=ミニ冷蔵庫+一人暮らし&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
       </div>
     </div>
 
