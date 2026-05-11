@@ -29,7 +29,7 @@ async function generateArticle() {
 
   const message = await client.messages.create({
     model: 'claude-sonnet-4-6',
-    max_tokens: 3000,
+    max_tokens: 6000,
     messages: [{
       role: 'user',
       content: `一人暮らし向け小型家電アフィリエイトサイト用の記事をHTMLで作成してください。
