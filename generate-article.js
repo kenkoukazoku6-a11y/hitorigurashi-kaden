@@ -205,6 +205,9 @@ footer { background: #1a2744; color: #9ca3af; margin-top: 20px; }
   // index.htmlの新着記事リストを更新
   updateIndex(topic.title, filename, dateStr);
 
+  // sitemap.xmlを更新
+  updateSitemap(filename);
+
   console.log(`完了：articles/${filename}`);
 }
 
@@ -219,6 +222,15 @@ function updateIndex(title, filename, dateStr) {
     fs.writeFileSync(indexPath, html);
     console.log('index.htmlを更新しました');
   }
+}
+
+function updateSitemap(filename) {
+  const sitemapPath = path.join(process.cwd(), 'sitemap.xml');
+  let xml = fs.readFileSync(sitemapPath, 'utf8');
+  const newUrl = `  <url>\n    <loc>https://hitorigurashi-kaden.pages.dev/articles/${filename}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+  xml = xml.replace('</urlset>', newUrl + '</urlset>');
+  fs.writeFileSync(sitemapPath, xml);
+  console.log('sitemap.xmlを更新しました');
 }
 
 generateArticle().catch(err => {
