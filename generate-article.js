@@ -51,7 +51,9 @@ async function generateArticle() {
     }]
   });
 
-  const content = message.content[0].text;
+  let content = message.content[0].text;
+  // Markdownコードブロックを除去
+  content = content.replace(/^```html\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/, '').trim();
   const articlesDir = path.join(process.cwd(), 'articles');
   if (!fs.existsSync(articlesDir)) fs.mkdirSync(articlesDir);
   fs.writeFileSync(path.join(articlesDir, filename), content);
