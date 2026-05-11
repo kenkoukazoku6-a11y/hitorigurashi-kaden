@@ -1,0 +1,272 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電気ケトルvsポット徹底比較【一人暮らし向け】どちらがおすすめ？ | 一人暮らしの小型家電ガイド</title>
+  <meta name="description" content="一人暮らしに電気ケトルとポットどちらが向いているか徹底比較！速度・電気代・使いやすさを詳しく解説。おすすめ商品5選も紹介します。">
+  <style>
+    /* ===== リセット・基本設定 ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      background: #f5f9f5;
+    }
+    a { color: #2e7d32; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ===== ヘッダー ===== */
+    header {
+      background: linear-gradient(135deg, #2e7d32, #43a047);
+      color: #fff;
+      padding: 16px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header .inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    header .site-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    header .site-name a { color: #fff; }
+    header nav a {
+      color: #c8e6c9;
+      font-size: 0.9rem;
+      margin-left: 16px;
+    }
+    header nav a:hover { color: #fff; }
+
+    /* ===== メインコンテンツ ===== */
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+
+    /* ===== パンくず ===== */
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: #777;
+      margin-bottom: 20px;
+    }
+    .breadcrumb a { color: #2e7d32; }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ===== 記事カード ===== */
+    article {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+
+    /* ===== 見出し ===== */
+    h1 {
+      font-size: 1.6rem;
+      color: #1b5e20;
+      border-left: 6px solid #43a047;
+      padding-left: 14px;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #fff;
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+      border-radius: 6px;
+      padding: 10px 16px;
+      margin: 40px 0 16px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: #2e7d32;
+      border-bottom: 2px solid #a5d6a7;
+      padding-bottom: 4px;
+      margin: 28px 0 12px;
+    }
+
+    /* ===== 段落・リスト ===== */
+    p { margin-bottom: 14px; }
+    ul, ol { padding-left: 1.4em; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+
+    /* ===== ハイライトボックス ===== */
+    .highlight-box {
+      background: #e8f5e9;
+      border-left: 4px solid #43a047;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .highlight-box strong { color: #2e7d32; }
+
+    /* ===== 注意ボックス ===== */
+    .note-box {
+      background: #fff8e1;
+      border-left: 4px solid #ffa000;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.93rem;
+    }
+
+    /* ===== 比較表 ===== */
+    .comparison-wrap { overflow-x: auto; margin: 20px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 480px;
+      font-size: 0.92rem;
+    }
+    table thead tr {
+      background: #2e7d32;
+      color: #fff;
+    }
+    table th, table td {
+      padding: 12px 14px;
+      border: 1px solid #c8e6c9;
+      text-align: center;
+    }
+    table tbody tr:nth-child(even) { background: #f1f8f1; }
+    table tbody tr:hover { background: #dcedc8; }
+    .check { color: #2e7d32; font-weight: bold; font-size: 1.1rem; }
+    .cross { color: #c62828; font-weight: bold; font-size: 1.1rem; }
+    .tri  { color: #f57c00; font-weight: bold; }
+
+    /* ===== 商品カード ===== */
+    .product-list { display: flex; flex-direction: column; gap: 24px; margin: 20px 0; }
+    .product-card {
+      background: #f9fbe7;
+      border: 2px solid #a5d6a7;
+      border-radius: 10px;
+      padding: 20px;
+      position: relative;
+    }
+    .product-card .rank {
+      position: absolute;
+      top: -14px;
+      left: 16px;
+      background: #2e7d32;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 3px 12px;
+      border-radius: 20px;
+    }
+    .product-card h3 {
+      margin: 6px 0 8px;
+      border: none;
+      padding: 0;
+      font-size: 1.08rem;
+    }
+    .product-card .price {
+      font-size: 1.1rem;
+      color: #c62828;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .product-card .features { font-size: 0.92rem; margin-bottom: 12px; }
+    .btn-amazon {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff9800, #f57c00);
+      color: #fff !important;
+      font-weight: bold;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    .btn-amazon:hover { opacity: 0.85; text-decoration: none; }
+
+    /* ===== まとめ表 ===== */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .summary-card {
+      background: #e8f5e9;
+      border: 2px solid #81c784;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .summary-card h3 { border: none; padding: 0; margin: 0 0 8px; font-size: 1rem; }
+    .summary-card ul { margin: 0; font-size: 0.9rem; }
+
+    /* ===== フッター ===== */
+    footer {
+      background: #1b5e20;
+      color: #c8e6c9;
+      text-align: center;
+      padding: 24px 16px;
+      margin-top: 48px;
+      font-size: 0.82rem;
+      line-height: 1.9;
+    }
+    footer a { color: #a5d6a7; }
+    footer .disclaimer {
+      max-width: 700px;
+      margin: 12px auto 0;
+      background: rgba(0,0,0,0.2);
+      border-radius: 6px;
+      padding: 12px 16px;
+      font-size: 0.78rem;
+    }
+
+    /* ===== レスポンシブ ===== */
+    @media (max-width: 600px) {
+      article { padding: 20px 16px; }
+      h1 { font-size: 1.3rem; }
+      h2 { font-size: 1.1rem; }
+      .summary-grid { grid-template-columns: 1fr; }
+      header .inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== ヘッダー ========== -->
+<header>
+  <div class="inner">
+    <div class="site-name">
+      <a href="../index.html">🌿 一人暮らしの小型家電ガイド</a>
+    </div>
+    <nav>
+      <a href="../index.html">トップへ戻る</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== メイン ========== -->
+<main>
+
+  <!-- パンくずリスト -->
+  <div class="breadcrumb">
+    <a href="../index.html">トップ</a>
+    <span>›</span>
+    <a href="#">キッチン家電</a>
+    <span>›</span>
+    電気ケトル vs ポット比較
+  </div>
+
+  <article>
+
+    <h1>電気ケトルとポットどちらがいい？一人暮らし向けに徹底比較！</h1>
+
+    <p>
+      一人暮らしを始めると「お湯を沸かす家電、何を買えばいいの？」と悩む方が多いのではないでしょうか。
+      <strong>電気ケトル</strong>と<strong>電気ポット（保温ポット）</strong>はどちらも定番ですが、ライフスタイルによって向き・不向きが大き
