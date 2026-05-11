@@ -1,4 +1,4 @@
-const Anthropic = require('@anthropic-ai/sdk');
+﻿const Anthropic = require('@anthropic-ai/sdk');
 const fs = require('fs');
 const path = require('path');
 
@@ -156,7 +156,7 @@ footer { background: #1a2744; color: #9ca3af; margin-top: 20px; }
           <span><strong>こんな人に</strong>（ターゲット）</span>
           <span><strong>価格帯</strong>（価格）</span>
         </div>
-        <a href="https://www.amazon.co.jp/s?k=${topic.keyword}" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
+        <a href="https://www.amazon.co.jp/s?k=${topic.keyword}&tag=hitorigura01c-22" class="amazon-btn" target="_blank">🛒 Amazonで価格を確認する</a>
       </div>
     </div>
 
