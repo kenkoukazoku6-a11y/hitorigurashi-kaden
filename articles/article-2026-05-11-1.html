@@ -1,0 +1,275 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コンパクト電子レンジの選び方とおすすめ4選【一人暮らし向け】</title>
+  <meta name="description" content="一人暮らしに最適なコンパクト電子レンジの選び方を徹底解説。フラットテーブル・ターンテーブル式の違いや容量の目安、おすすめ4機種を比較表つきで紹介します。">
+  <style>
+    /* ===== リセット & ベース ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      background: #f5f9f5;
+    }
+    a { color: #2e7d32; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; }
+
+    /* ===== ヘッダー ===== */
+    header {
+      background: linear-gradient(135deg, #1b5e20, #43a047);
+      color: #fff;
+      padding: 16px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .site-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+    }
+    .site-name a { color: #fff; }
+    .breadcrumb { font-size: .8rem; opacity: .85; }
+    .breadcrumb a { color: #c8e6c9; }
+
+    /* ===== メインレイアウト ===== */
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+
+    /* ===== 記事ヘッダー ===== */
+    .article-header {
+      background: #fff;
+      border-left: 6px solid #43a047;
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .article-header h1 {
+      font-size: 1.6rem;
+      color: #1b5e20;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .article-meta {
+      font-size: .82rem;
+      color: #777;
+    }
+
+    /* ===== セクション共通 ===== */
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #fff;
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+      padding: 10px 18px;
+      border-radius: 4px;
+      margin-bottom: 18px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: #2e7d32;
+      border-bottom: 2px solid #a5d6a7;
+      padding-bottom: 6px;
+      margin: 20px 0 10px;
+    }
+
+    p { margin-bottom: 14px; }
+
+    /* ===== ポイントボックス ===== */
+    .point-box {
+      background: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+    .point-box ul { padding-left: 1.4em; }
+    .point-box ul li { margin-bottom: 6px; }
+
+    /* ===== 商品カード ===== */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    }
+    .card-badge {
+      background: #43a047;
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      display: inline-block;
+    }
+    .card-img-area {
+      background: #f1f8e9;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1b5e20;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .card-features {
+      font-size: .85rem;
+      color: #555;
+      flex: 1;
+      margin-bottom: 12px;
+    }
+    .card-features li {
+      list-style: none;
+      padding-left: 1.2em;
+      position: relative;
+      margin-bottom: 4px;
+    }
+    .card-features li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #43a047;
+      font-size: .8rem;
+    }
+    .card-price {
+      font-size: .9rem;
+      color: #777;
+      margin-bottom: 12px;
+    }
+    .card-price strong {
+      font-size: 1.1rem;
+      color: #c62828;
+    }
+    .btn-amazon {
+      display: block;
+      background: linear-gradient(180deg, #f7ca45, #f0a800);
+      color: #111;
+      font-weight: 700;
+      font-size: .9rem;
+      text-align: center;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #d5a000;
+      transition: opacity .15s;
+    }
+    .btn-amazon:hover { opacity: .85; text-decoration: none; }
+
+    /* ===== 比較表 ===== */
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: .88rem;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.07);
+    }
+    thead { background: #2e7d32; color: #fff; }
+    thead th { padding: 12px 10px; text-align: center; }
+    tbody tr:nth-child(even) { background: #f1f8e9; }
+    tbody td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #dcedc8;
+    }
+    tbody td:first-child { text-align: left; font-weight: 700; color: #2e7d32; }
+    .check { color: #43a047; font-size: 1.1rem; }
+    .cross { color: #bbb; font-size: 1.1rem; }
+
+    /* ===== まとめボックス ===== */
+    .summary-box {
+      background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+      border: 2px solid #66bb6a;
+      border-radius: 8px;
+      padding: 24px 28px;
+    }
+    .summary-box ol { padding-left: 1.5em; }
+    .summary-box ol li { margin-bottom: 8px; }
+
+    /* ===== フッター ===== */
+    footer {
+      background: #1b5e20;
+      color: #c8e6c9;
+      text-align: center;
+      padding: 24px 16px;
+      font-size: .78rem;
+      line-height: 1.7;
+    }
+    footer a { color: #a5d6a7; }
+
+    /* ===== レスポンシブ ===== */
+    @media (max-width: 600px) {
+      .article-header h1 { font-size: 1.25rem; }
+      h2 { font-size: 1.1rem; }
+      .product-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== ヘッダー ========== -->
+<header>
+  <div class="header-inner">
+    <div class="site-name">
+      <a href="../index.html">🏠 一人暮らしの小型家電ガイド</a>
+    </div>
+    <nav class="breadcrumb">
+      <a href="../index.html">トップ</a> &rsaquo; 電子レンジ &rsaquo; コンパクト電子レンジの選び方
+    </nav>
+  </div>
+</header>
+
+<!-- ========== メインコンテンツ ========== -->
+<main>
+
+  <!-- 記事タイトル -->
+  <div class="article-header">
+    <h1>コンパクト電子レンジの選び方とおすすめ4選【2024年・一人暮らし向け】</h1>
+    <p class="article-meta">更新日：2024年6月1日 ｜ カテゴリ：電子レンジ</p>
+  </div>
+
+  <!-- リード文 -->
+  <section>
+    <p>
+      一人暮らしを始めるとき、電子レンジは「最初に揃えたい家電」のひとつです。しかし、家電量販店に並ぶレンジは種類が多く、何を基準に選べばよいか迷う方も多いでしょう。本記事では<strong>一人暮らしのキッチンに置きやすいコンパクト電子レンジ</strong>に絞り、選び方のポイントと
