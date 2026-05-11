@@ -36,6 +36,8 @@ async function generateArticle() {
 
 テーマ：${topic.title}
 
+重要：マークダウンのコードブロック（\`\`\`html や \`\`\`）を絶対に使わないでください。<!DOCTYPE html>から始まる生のHTMLのみを返してください。
+
 要件：
 - 完全なHTMLページ（<!DOCTYPE html>から</html>まで）
 - 日本語で書く
