@@ -54,11 +54,12 @@ async function generateArticle() {
   });
 
   let content = message.content[0].text;
-  // 先頭のコードフェンスを除去
-  content = content.replace(/^```(?:html)?\s*\n?/, '');
-  // 末尾のコードフェンスを除去
-  content = content.replace(/\n?```\s*$/, '');
-  content = content.trim();
+  // コードフェンスを行単位で除去
+  const lines = content.split('\n');
+  const startIdx = lines[0].trim().startsWith('```') ? 1 : 0;
+  const lastLine = lines[lines.length - 1].trim();
+  const endIdx = lastLine === '```' || lastLine === '```html' ? lines.length - 1 : lines.length;
+  content = lines.slice(startIdx, endIdx).join('\n').trim();
   const articlesDir = path.join(process.cwd(), 'articles');
   if (!fs.existsSync(articlesDir)) fs.mkdirSync(articlesDir);
   fs.writeFileSync(path.join(articlesDir, filename), content);
