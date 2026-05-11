@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'  # 毎日午前9時JST（UTC 0時）
   workflow_dispatch:      # 手動実行も可能
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -30,6 +33,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Auto Article Bot"
-          git add .
+          git add articles/ index.html
           git diff --staged --quiet || git commit -m "自動記事生成: $(date +'%Y-%m-%d')"
           git push
