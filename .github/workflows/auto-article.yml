@@ -1,9 +1,7 @@
 name: 自動記事生成
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # 毎日午前9時JST（UTC 0時）
-  workflow_dispatch:      # 手動実行も可能
+  workflow_dispatch:      # 手動実行のみ
 
 permissions:
   contents: write
